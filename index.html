@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Function Discoverer</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="https://cdn2.iconfinder.com/data/icons/flat-database/512/function-512.png" type="image/png">
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.core.js" integrity="sha256-tsIbwIT+4qFYQl3lJqYOZst6ot+JaR73T5eusuTukXM=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+    <script src="https://unpkg.com/d3@3/d3.min.js"></script>
+    <script src="https://unpkg.com/function-plot@1/dist/function-plot.js"></script>
+    <!-- Cargar clases de arboles -->
+    <script type="text/javascript" src="javascript/tree/Queue.js"></script>
+    <script type="text/javascript" src="javascript/tree/Node.js"></script>
+    <!-- Cargar clases relacionadas con la programación genética -->
+    <script type="text/javascript" src="javascript/geneticProgramming/ProgramTree.js"></script>
+    <script type="text/javascript" src="javascript/geneticProgramming/Population.js"></script>
+    <!-- Cargar clase principal -->
+    <script type="text/javascript" src="javascript/main.js"></script>
+
+  </head>
+  <body>
+    <div id="layout-div">
+      <div  id="main-div" >
+        <p>The discovered function should minimize the distance to the points in the following canvas.</p>
+        <p>Click to add a point</p>
+        <section id="plot">
+          <div id="myFunction"></div>
+        </section>
+      </div>
+
+    <div id="second-div">
+      <h1>Function Discoverer</h1>
+        <div center>
+          <p class="button button1" onclick="solveFunction()">Start</p>
+          <p class="button button2" onclick="stop()">Restart everyting</p>
+          <p id="bestFunction">Best Function: </p>
+          <p id="bestFitnessText">Best Fitness: </p>
+          <p id="averageFitnessText">Average Fitness: </p>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

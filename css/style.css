@@ -1,0 +1,159 @@
+*{font-family:"Courier New";}
+body{
+  background-color: #FFF;
+}
+h1 {text-align: center; font-size: 3em; color: rgb(50, 162, 199);}
+.card{
+  background-color:#FFF;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#myFunction svg{
+  display: block;
+  margin: auto;
+}
+#main-div{
+  text-align:center;
+  font-size:1.2em;
+  margin-left: auto;  margin-right: auto;
+  width: 600px;
+  padding: 50px;
+}
+.graph circle{
+
+  opacity: 1 !important; 
+  fill: green !important; 
+}
+#second-div{
+  text-align:center;
+  font-size:1.2em;
+  margin-left: auto;  margin-right: auto;
+  width: 500px;
+  padding: 10px;
+}
+.restart{
+  padding:3%;
+  padding-top:25px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width:40%;
+  display:inline-block;
+  background-color:#FFF;
+}
+
+*.unselectable {
+   -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+
+   /*
+     Introduced in IE 10.
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+   */
+   -ms-user-select: none;
+   user-select: none;
+}
+
+/*layout for desktop*/
+#layout-div {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+/*button css*/
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid rgb(204, 59, 59);
+}
+
+.button2:hover {
+  background-color: rgb(204, 59, 59);
+  color: white;
+}
+
+/*mobile layout*/
+@media (orientation: portrait) {
+
+  #low{
+    text-align:center;
+    font-size:2.5em;
+    margin-left: auto;  margin-right: auto;
+    margin-top:10px;
+    width: 80%;
+    padding: 10px;
+  }
+  h1{
+      font-size:5em;
+  }
+}
+body{
+  font-family: Avenir, Heveltica, sans-serif;
+}
+
+/*Difficulty selector*/
+#difficulty_div{
+  margin-top: 20px;
+  font-size: 1em;
+  display: block;
+}
+
+#difficulty_div.hidden{
+  display: none;
+}
+
+.slider {
+ -webkit-appearance: none;
+ width: auto;
+ height: 15px;
+ border-radius: 5px;
+ background: #d3d3d3;
+ outline: none;
+ opacity: 0.7;
+ -webkit-transition: .2s;
+ transition: opacity .2s;
+}
+
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #7889d6;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #7889d6;
+  cursor: pointer;
+}
+
